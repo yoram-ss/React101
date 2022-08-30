@@ -1,0 +1,9 @@
+button {
+  color: red;
+  padding: 10px;
+}
+
+.btnGreen {
+  color: green;
+  display: inline;
+}
