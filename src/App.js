@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import style from "./mystyle.module.css";
 import Footer from "./Footer";
 
@@ -8,6 +8,10 @@ function App() {
   const [name, setName] = useState("...");
   const [count, setCount] = useState(0);
   // const countme = 0;
+
+  useEffect(() => {
+    document.title = `${count} ${name}`;
+  });
 
   return (
     <div className="App">
