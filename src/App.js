@@ -1,24 +1,25 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-  const name = "yoram";
+  const [name, setName] = useState("...");
+  const [count, setCount] = useState(0);
+  // const countme = 0;
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>Hello my name is {name}</code> and save to reload.
+          <code>
+            Hello my name is {name} {count}
+          </code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={() => setName("yoram")}>Change Name</button>
+        <button onClick={() => setCount((prev) => prev + 1)}>+</button>
+        <button onClick={() => setCount((prev) => prev - 1)}>-</button>
+        {/* <button onClick={() => countme + 1}>update var</button> */}
       </header>
     </div>
   );
