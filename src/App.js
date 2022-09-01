@@ -29,7 +29,7 @@ function App() {
         <button onClick={() => setCount((prev) => prev - 1)}>-</button>
         {/* <button onClick={() => countme + 1}>update var</button> */}
       </header>
-      <Footer />
+      <Footer name={name} />
     </div>
   );
 }
