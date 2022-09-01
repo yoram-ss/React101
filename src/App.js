@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import style from "./mystyle.module.css";
 
 function App() {
   const [name, setName] = useState("...");
@@ -16,7 +17,9 @@ function App() {
             Hello my name is {name} {count}
           </code>
         </p>
-        <button onClick={() => setName("yoram")}>Change Name</button>
+        <button className={style.btnGreen} onClick={() => setName("yoram")}>
+          Change Name
+        </button>
         <button onClick={() => setCount((prev) => prev + 1)}>+</button>
         <button onClick={() => setCount((prev) => prev - 1)}>-</button>
         {/* <button onClick={() => countme + 1}>update var</button> */}
