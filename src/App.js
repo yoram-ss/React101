@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import style from "./mystyle.module.css";
+import Footer from "./Footer";
 
 function App() {
   const [name, setName] = useState("...");
@@ -24,6 +25,7 @@ function App() {
         <button onClick={() => setCount((prev) => prev - 1)}>-</button>
         {/* <button onClick={() => countme + 1}>update var</button> */}
       </header>
+      <Footer />
     </div>
   );
 }
