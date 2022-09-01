@@ -1,5 +1,10 @@
-const Footer = () => {
-  return <div>Today I'm Learning React</div>;
+const Footer = ({ name }) => {
+  return (
+    <div>
+      {name && `My name is ${name}, and `}
+      today I'm learning about react
+    </div>
+  );
 };
 
 export default Footer;
