@@ -5,8 +5,10 @@ const Footer = ({ name }) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <>
-      <div style={{ backgroundColor: theme.background }}>
+    <div className="App mb">
+      <div
+        style={{ backgroundColor: theme.background, color: theme.foreground }}
+      >
         {name && `My name is ${name}, and `}
         today I'm learning about react
       </div>
@@ -17,7 +19,7 @@ const Footer = ({ name }) => {
       >
         Change background
       </button>
-    </>
+    </div>
   );
 };
 

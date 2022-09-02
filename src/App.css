@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-item {
+  background-color: #eee;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+button {
+  color: #282c34;
+  margin: 0 2px;
+  padding: 5px 10px;
+  /* border: none;
+  border-radius: 5px;
+  cursor: pointer; */
+}
+
+/* button:hover {
+  background-color: rgb(231, 231, 231);
+} */
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.sm {
+  font-size: 14px;
+}
