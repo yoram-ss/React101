@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import style from "./mystyle.module.css";
 import Footer from "./Footer";
 import { ThemeContext, themes } from "./contexts/ThemeContext";
+import Fetch from "./Fetch";
 
 function App() {
   const [name, setName] = useState("...");
@@ -17,8 +18,8 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className="App">
-        <header className="App-header">
+      <div>
+        <header className="App mb">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             <code>
@@ -33,6 +34,7 @@ function App() {
           {/* <button onClick={() => countme + 1}>update var</button> */}
         </header>
         <Footer name={name} />
+        <Fetch />
       </div>
     </ThemeContext.Provider>
   );
