@@ -5,6 +5,7 @@ import style from "./mystyle.module.css";
 import Footer from "./Footer";
 import { ThemeContext, themes } from "./contexts/ThemeContext";
 import Fetch from "./Fetch";
+import Register from "./Register";
 
 function App() {
   const [name, setName] = useState("...");
@@ -35,6 +36,7 @@ function App() {
         </header>
         <Footer name={name} />
         <Fetch />
+        <Register />
       </div>
     </ThemeContext.Provider>
   );
