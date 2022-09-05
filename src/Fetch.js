@@ -10,7 +10,6 @@ const Fetch = () => {
     fetch(`https://gorest.co.in/public/v2/users?page=${page}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setUser(data);
         setLoading(false);
       })
